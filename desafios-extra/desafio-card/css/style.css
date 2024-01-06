@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarelo: #f4d04e;
+    --branco:  #ffffff;
+    --cinza:   #808080;
+    --preto:   #121212;
+    --fonte01: 'Figtree';
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    font-family: var(--fonte01);
+}
+
+article{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 375px;
+    height: 570px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px black;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+article:hover{
+    box-shadow: 12px 12px black;
+}
+
+#principal{
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--amarelo);
+    padding: 5px 15px;
+    width: 95px;
+    margin: 25px 0px 15px;
+    border-radius: 5px;
+}
+
+h2:hover{
+    background-color: var(--preto);
+    color: var(--amarelo);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#data{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 1.7em;
+    font-weight: 800;
+}
+
+h1:hover{
+    color: var(--amarelo);
+    transition: 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    cursor: pointer;
+}
+
+.sobre{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--cinza);
+    text-align: justify;
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+div img{
+    width: 40px;
+}
+
+div p{
+    padding: 10px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+footer{
+    position: relative;
+    top: 100%;
+    background-color: var(--preto);
+    color: rgb(167, 166, 166);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: rgb(102, 101, 101);
+}

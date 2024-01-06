@@ -1,0 +1,38 @@
+body{
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+h1{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.video-html{
+    display: flex;
+    position: relative;
+    left: 470px;
+    top: 3px;
+}
+
+.video-js{
+    display: flex;
+    position: relative;
+    left: 680px;
+    top: -110px;
+}
+
+.video-python {
+    display: flex;
+    position: relative;
+    left: 680px;
+    top: -230px;
+}
+
+.video-hardware {
+    display: flex;
+    position: relative;
+    left: 470px;
+    top: -118px;
+}

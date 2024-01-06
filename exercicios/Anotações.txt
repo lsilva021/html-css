@@ -1,0 +1,181 @@
+Uma imagem não é um block.
+
+ Quando colocamos 'margin > p' com esse sinal de maior, estamos indicando que a tag p está diretamente inserida na tag main. 
+ Quando colcoamso 'margin p' sem o sinal de maior indicamos que o p está sim dentro do main, mas em qualquer nível, podendo estar dentro de outra tag inserida no main, como dentro de uma section, ou um article..
+_________________________________________
+Para fazer configurações globais, basta usar a propriedade:
+	*{
+
+	}
+_________________________________________
+display: inline-block; - Serve para colocar tudo na mesma linha.
+
+<div> - É um espaço em branco e quando não configurada ocupa a tela inteira
+
+border: solid; - serve para gerarmos uma borda. Conseguimos configurar para darmos espessura, cor, entre outras coisas.
+
+# - Identificador
+. - Classe
+: - pseudo-classe
+::- pseudo-elemento
+> - filho/children
+
+========= Pseudo-classes ================
+
+são identificadas por ':' logo após uma classe.
+
+:hover - funciona como "ao passar o mouse por cima". 
+
+:visite - funciona para mostrar um link que já foi visitado.
+
+:active - estado do elemento ao ser clicado
+
+===== Pseudo-elementos =====
+
+Servem para acrescentar elementos no HTML através das CSS. São identificados por '::'
+
+::after - inclui um elemento depois. É preciso digitar 'content: ;' depois das chaves para incluir o elemento. 
+
+::before - inclui um elemento antes. É preciso digitar 'content: ;' depois das chaves para incluir o elemento.
+
+::first-line - seleciona partes especificas de um elemento
+
+Conseguimos combinar pseudo-classes com pseudo-elementos. 
+Ex.: .site:hover::after {content: ' +';}
+
+=====================================
+Procurar sobre HTML e CSS - Box-Model
+
+Box-Model
+
+Todo conteúdo que vemos em HTML são exibidas dentro de caixas, então quando estilizamos um conteúdo, estamos estilizando as suas caixas.
+
+Propriedades:
+
+height: ; - Altura
+
+width: ; - Largura
+
+border: ; - Borda da caixa.
+
+padding: ; - Espaço interno entre o conteúdo e a borda da caixa.
+
+margin: ; - Espaço externo entre a borda da caixa e a página
+
+outline: ; - Contorno ou traçado por fora do elemento, entre a borda e a margem
+
+line-height: ; - Altura entre as linhas de um parágrafo.
+
+===== TIPOS DE BOX =====
+box-level - É um tipo de caixa que SEMPRE possui quebra de linha quando adicionamos outra caixa, também preenche toda largura do viewport e inicia na próxima linha.
+
+inline-level - É um tipo de caixa que adicionados elementos, não possui quebra de linha, não ocupa a largura inteira da viewport e continua o conteúdo na mesma linha.
+---------------------------------------
+Exemplos box-level:
+<div>: Agrupa elementos, facilitando a organização do código.
+
+<h1>-<h6>: Define títulos de diferentes níveis de hierarquia.
+
+<p>: Representa um parágrafo de texto.
+
+<main>: Indica o conteúdo principal da página.
+
+<header>: Define o cabeçalho da página ou de uma seção.
+
+<nav>: Representa uma área de navegação.
+
+<article>: Define um conteúdo independente e autossuficiente.
+
+<aside>: Representa conteúdo alternativo, secundário ou periférico.. relacionado, muitas vezes, em uma barra lateral.
+
+<footer>: Indica o rodapé da página ou de uma seção.
+
+<form>: Utilizado para criar formulários interativos.
+
+<video>: Inclui vídeos ou links para arquivos de vídeo.
+-----------------------------------------
+Exemplos de inline-level:
+
+<span>: Aplica estilo a partes específicas de um texto.
+
+<a>: Cria links de navegação.
+<code>: Utilizado para representar código fonte.
+
+<small>: Define um texto com um tamanho de fonte menor.
+
+<strong>: Enfatiza fortemente o texto.
+
+<em>: Enfatiza o texto.
+
+<sup>-<sub>: Representa texto sobrescrito (superscrito) ou subscrito.
+
+<label>: Associa um rótulo a um controle de formulário.
+
+<button>: Cria um botão interativo.
+
+<input>: Define um campo de entrada em um formulário.
+
+<select>: Cria uma lista suspensa em um formulário.
+
+Conseguimos também mudar o tipo da caixa padrão. Caso um elemento tenho como padrão box-level basta aplicarmos no seu estilo a propriedade 'display: inline;' para torná-lo inline-level. O mesmo acontece ao contrário. Caso o elemento seja inline-level por padrão, basta aplicarmos a propriedade 'display: block;' para torná-lo box-level.
+
+======= SOMBRAS NAS CAIXAS ============
+box-shadow: 1px(eixo X) 1px(eixo Y) 1px(blur/esfumaçado) 1px(spread/alcance) black(cor);
+
+============= BORDAS ==================
+border-image: ; - Bordas decoradas.
+
+border-radius: ; - arredondamento das bordas.
+
+========= PLANEJAMENTO ================
+Planejando um site:
+
+1º - Layout: Para nos ajudar no planejamento de um layout, temos o site mockflow.com.
+
+2º - Cores
+
+3º - Fontes
+
+
+======== VARIÁVEIS EM CSS ===============
+
+	Apesar de possuir variáveis(var), CSS não é uma linguagem de programação, é uma linguagem de marcação.
+
+	Toda linguagem de programação tem variável, mas nem toda linguagem que tem variável é uma linguagem de programação. CSS é um belo exemplo disso.
+
+:root{} - É a raiz da árvore do documento. Tudo que for pré-estabelecido nessa pseudo-classe será válido para todo o documento.
+
+Toda variável em CSS começa com ' -- '
+
+Elas servem para otimizar o nosso tempo, simplificando coisas como fontes, cores, etc.
+
+Ex.: Ao usarmos essa declaração para designarmos a cor da letra de um parágrafo:
+
+	p{
+	  color: #ebe5c5; 
+   }
+
+Teremos sempre que digitarmos o hexadecimal da cor para aplicar a cor em algum outro parágrafo. 
+
+Com as variáveis facilitamos o serviço da seguinte forma. Damos um nome para a cor/fonte (ex.: cor01, fonte01) e sempre que quisermos dar essa cor para algum elemento, basta digitarmos o nome que demos. 
+Ex.:
+
+	:root{
+		--cor01: #ebe5c5;
+       }
+
+Para acharmos a cor nomeada, basta digitar a variável e em seguida dar CTRL+space ou digitar var(--cor01); Ex.:
+
+	p {
+		color: var(--cor01);
+	}
+
+======= RESPONSIVIDADE EM CSS ===========
+
+Responsividade é adaptar o tamanho e o conteúdo a tamanho de telas diferentes.
+
+position: relative;
+
+position: absolute;
+
+quando usamos o 'position: absolute;' conseguimos trabalhar com 'top: ;' e 'left: ;' para posicionarmos um elemento. Também conseguimos configurar o 'width: ;' e 'height: ;'.

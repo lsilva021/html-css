@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+
+    <style>
+        
+        body{
+            background-image: linear-gradient(to right, orange, #806940);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            background-color: #404880;
+            color: orange;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            text-decoration: underline 15px;
+        }
+
+        #mouse{
+            font: normal bold 1em Arial, sans-serif;
+            color: #01138a;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: blue;
+            color: white;
+            font: bold 2em Arial, Helvetica, sans-serif;
+            width: 210px;
+        }  
+
+        div{
+            width: 153px;
+            font: normal bold 1em Arial, sans-serif;
+            color: #01138a;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p id="mouse">Passe o mouse no texto abaixo.</p>
+    <div>
+        passe o mouse aqui
+        <p>SURPRESA!!!</p>
+    </div>
+
+    <p id="link"><a href="pseudoclasses.html" target="_self" rel="prev">Voltar</a></p>
+
+    <p><a href="pag03.html" target="_self" rel="next">Avançar</a></p>
+</body>
+</html>
