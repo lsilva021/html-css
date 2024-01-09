@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+    --cor01: #1c232b;
+    --cor06: #1f4638;
+    --cor02: #6c7289;
+    --cor03: #3c8067;
+    --cor04: #ffffff;
+    --cor05: #f2ebe3;
+
+    --fontepadrao: 'Montserrat';
+    --fonte02: 'Fraunces';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    color: grey;
+    background-color: var(--cor05);
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    max-height: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 400px;
+    padding: 0px 35px;
+}
+
+#item{
+    padding-top: 30px;
+    color: grey;
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+.descricao{
+    display: block;
+    font-family: var(--fontepadrao);
+    font-weight: 500;
+    background-color: var(--cor04);
+    width: 100%;
+}
+
+h1{
+    color: black;
+    width: 200px;
+    padding: 10px 0px;
+    font-family: var(--fonte02);
+}
+
+p{
+    font-family: var(--fontepadrao);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 240px;
+    margin-bottom: 10px;
+}
+
+h3{
+    display: inline;
+}
+
+#preco-novo{
+    color: var(--cor03);
+    font-family: var(--fonte02);
+    font-size: 2em;
+    margin-right: 10px; 
+}
+
+#preco-antigo{
+    font-size: 1em;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 4px;
+}
+
+button{
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 200px;
+    padding: 10px 0;
+    background-color: var(--cor03);
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+
+button::before{
+    content: "\1F6D2  ";
+}
+
+button:hover{
+    background-color: var(--cor06);
+    cursor: pointer;
+}
