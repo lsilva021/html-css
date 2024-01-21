@@ -179,3 +179,19 @@ position: relative;
 position: absolute;
 
 quando usamos o 'position: absolute;' conseguimos trabalhar com 'top: ;' e 'left: ;' para posicionarmos um elemento. Também conseguimos configurar o 'width: ;' e 'height: ;'.
+
+========== SHORTHAND BACKGROUND =========
+Ordem do shorthand:
+color, image, position, repeat, size*, attachment (sem as vírgulas)
+
+Obs.*: por mais que esteja na regra o size estar incluso na shorthand, ainda não é funcional. Portanto, quando fizermos o shorthand background devemos fazê-lo sem o /size/, e incluirmos no estilo a declaração 'background-size: ;'
+
+=============== TABELAS =================
+
+Não podemos usar tabelas pra montar a estrutura do site.
+
+---------- HIERARQUIA DE TABELA ---------
+table = tabela
+   table row (<tr></tr>) = linha de tabela
+      table header (<th></th>) = cabeçalho de tabela
+      table data (<td></td>) = dados de tabela.
