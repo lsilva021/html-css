@@ -180,6 +180,10 @@ position: absolute;
 
 quando usamos o 'position: absolute;' conseguimos trabalhar com 'top: ;' e 'left: ;' para posicionarmos um elemento. Também conseguimos configurar o 'width: ;' e 'height: ;'.
 
+height: 100vh (significa 100% da viewport relacionado a altura)
+
+width: 100vw (significa 100% da viewport relacionado a largura)
+
 ========== SHORTHAND BACKGROUND =========
 Ordem do shorthand:
 color, image, position, repeat, size*, attachment (sem as vírgulas)
@@ -195,3 +199,12 @@ table = tabela
    table row (<tr></tr>) = linha de tabela
       table header (<th></th>) = cabeçalho de tabela
       table data (<td></td>) = dados de tabela.
+
+-------------- ALINHAMENTO -------------------
+Alinhamento horizontal: 'text-align: left(padrão)/center/right;'
+
+Alinhamento vertical: 'vertical-align: top/middle(padrão)/bottom;'
+
+------------------ EFEITO ZEBRADO ---------------
+
+Para esse efeito usamos a pseudo-classe ':nth-child()' que adimitem o valor (odd) que siginifica ímpar e (even) par. Que podems ser substituídos por (2n-1) para ímpar, e (2n) para par
