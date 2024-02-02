@@ -8,6 +8,11 @@ Para fazer configurações globais, basta usar a propriedade:
 
 	}
 _________________________________________
+<hr> : tag para gerar uma linha abaixo do conteúdo. Uma quebra entre dois elementos.
+
+gap: ; - espaço entre elementos.
+
+
 display: inline-block; - Serve para colocar tudo na mesma linha.
 
 <div> - É um espaço em branco e quando não configurada ocupa a tela inteira
