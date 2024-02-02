@@ -1,0 +1,9 @@
+============== JAVASCRIPT ===============
+
+Propriedade: é uma associação entre um nome (ou chave) e um valor.
+
+Objeto: é uma coleção de propriedades.
+
+Objeto window: objeto da janela do navegador
+
+toggle: funciona como "se - senão". Se um elemento ta de uma forma ele tem uma função, se o elemento não está dessa forma ele tem outra função.  
