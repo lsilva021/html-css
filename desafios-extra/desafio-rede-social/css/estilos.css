@@ -31,15 +31,18 @@ body{
     height: 100vh;
     background-color: var(--preto02);
     font-family: var(--fontepadrao);
-    position: relative;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -50,7 +53,7 @@ body{
     width: 350px;
     max-height: 600px;
     background-color: var(--cinza02);
-    margin: auto;
+    
 }
 
 .card .foto-perfil{
@@ -124,11 +127,6 @@ body{
 footer{
     padding-bottom: 13px;
     text-align: center;
-    width: 90%;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 90%);
 }
 
 footer a:hover{
