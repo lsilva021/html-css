@@ -64,6 +64,7 @@ width: ; - Largura
 border: ; - Borda da caixa.
 
 padding: ; - Espaço interno entre o conteúdo e a borda da caixa.
+quando os elementos são somente 'inline' os efeitos de margin e padding são aplicados somente na horizontal.
 
 margin: ; - Espaço externo entre a borda da caixa e a página
 
@@ -205,11 +206,26 @@ table = tabela
       table header (<th></th>) = cabeçalho de tabela
       table data (<td></td>) = dados de tabela.
 
--------------- ALINHAMENTO -------------------
+-------------- ALINHAMENTO --------------
 Alinhamento horizontal: 'text-align: left(padrão)/center/right;'
 
 Alinhamento vertical: 'vertical-align: top/middle(padrão)/bottom;'
 
------------------- EFEITO ZEBRADO ---------------
+-------------- EFEITO ZEBRADO ---------------
 
 Para esse efeito usamos a pseudo-classe ':nth-child()' que adimitem o valor (odd) que siginifica ímpar e (even) par. Que podems ser substituídos por (2n-1) para ímpar, e (2n) para par
+
+---------- TABELAS RESPONSIVAS --------------
+
+Para melhorarmos a responsividade das tabelas, é necessário colocar toda a tabela (<table></table>) dentro de uma div e designar a propriedade "overflow" para ela.
+
+O que é 'overflow'? 
+A tradução pode ser para alguma coisa que transborda.
+
+overflow-y: rolagem vertical
+
+overflow-x: rolagem horizontal
+
+overflow: shorthand das duas overflows.
+
+quando usamos 'overflow: auto;' a rolagem passa a valer apenas para a tabela. Permitindo que nosso conteúdo fora da tabela permaneça no seu lugar, sem quebras.

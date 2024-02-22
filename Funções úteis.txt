@@ -1,0 +1,3 @@
+'.class:hover .outra-class{
+	
+}' - significa que ao passar o mouse sobre o CLASS a ação será realizada em cima da OUTRA-CLASS.
