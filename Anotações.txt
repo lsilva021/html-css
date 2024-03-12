@@ -94,11 +94,18 @@ Exemplos box-level:
 
 <aside>: Representa conteúdo alternativo, secundário ou periférico.. relacionado, muitas vezes, em uma barra lateral.
 
+<figure>: Geralmente serve pra definir uma caixa de imagem onde terá uma imagem e um texto. Normalmente acompanhada de uma tag <figcaption>.
+
+<figcaption>: Cria uma legenda logo abaixo da imagem que está dentro da tag <figure>.
+
 <footer>: Indica o rodapé da página ou de uma seção.
 
 <form>: Utilizado para criar formulários interativos.
 
 <video>: Inclui vídeos ou links para arquivos de vídeo.
+
+<address>: É usada para definir uma seção de contatos, como email, endereço, telefone, redes sociais.
+
 -----------------------------------------
 Exemplos de inline-level:
 

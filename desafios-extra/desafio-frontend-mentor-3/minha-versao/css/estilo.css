@@ -1,0 +1,169 @@
+/* ### Cores primarias
+
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Cores neutras
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%) */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    /* Cores de fundo */
+    --corfundo01: #f3e6d8;
+    --corfundo02: #ffffff;
+    --corfundo03: #fff5fa;
+
+    /* Cores de fonte */
+    --corfonte01: hsl(24, 5%, 18%);
+    --corfonte02: hsl(14, 45%, 36%);
+    --corfonte03: hsl(332, 51%, 32%);
+    --corfonte04: hsl(30, 10%, 34%);
+
+    /* Fontes */
+    --fonte01: 'Young Serif';
+    --fonte02: 'Outfit'
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--corfundo01);
+    font-family: var(--fonte02);
+    color: var(--corfonte04);
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 53.1%;
+    min-width: 390px;
+    margin: 5% 0;
+    background-color: white;
+    
+    border-radius: 25px;
+}
+
+.card .imagem{
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.card .conteudo{
+    padding: 0 20px;
+}
+
+ol ::marker, ul ::marker, .value{
+    color: var(--corfonte02);
+    font-weight: bold;
+}
+
+ul, ol{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    padding-left: 20px;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.titulo-principal, .titulo-secundario{
+    font-family: var(--fonte01);
+}
+
+.titulo-principal{
+    font-size: 2.4em;
+    font-weight: 400;
+    color: var(--corfonte01);
+    padding: 20px 0;
+}
+
+.titulo-secundario{
+    padding: 20px 0;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: var(--corfonte02);
+}
+
+.titulo-terciario{
+    padding: 20px 0;
+    color: var(--corfonte03);
+    font-size: 1.3em;
+}
+
+.imagem{
+    width: 100%;
+}
+
+.imagem img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.informacoes{
+    background-color: var(--corfundo03);
+    padding: 0px 30px 30px;
+    border-radius: 10px;
+}
+
+.ingredientes{
+    padding-bottom: 40px;
+}
+
+.instrucoes{
+    padding: 40px 0;
+    padding-top: 20px;
+}
+
+.nutricional .tabela-nutri .info-tabela-nutri{
+    display: flex;
+    gap: 40%;
+    padding: 20px 50px;
+}
+
+.nutricional .tabela-nutri .info-tabela-nutri .name{
+    width: 58px;
+}
+
+.rodape{
+    text-align: center;
+    color: var(--corfonte01);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: var(--corfonte01);
+    font-weight: 600;
+}
+
+.rodape a:hover{
+    color: var(--corfonte03);
+    text-decoration: underline;
+}

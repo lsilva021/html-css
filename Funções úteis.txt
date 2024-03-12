@@ -1,3 +1,8 @@
 '.class:hover .outra-class{
 	
 }' - significa que ao passar o mouse sobre o CLASS a ação será realizada em cima da OUTRA-CLASS.
+
+---------------------------------------------------------
+Para mudar a cor de um marcador de um lista, basta aplicar um color dentro da tag 'ol ::marker'*
+
+*é obrigatório o espaço antes dos dois pontos.
