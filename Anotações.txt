@@ -13,7 +13,7 @@ _________________________________________
 gap: ; - espaço entre elementos.
 
 
-display: inline-block; - Serve para colocar tudo na mesma linha.
+display: inline-block; - Serve para colocar tudo na mesma linha. É possível designarmos width e height.
 
 <div> - É um espaço em branco e quando não configurada ocupa a tela inteira
 
@@ -60,6 +60,8 @@ Propriedades:
 height: ; - Altura
 
 width: ; - Largura
+
+(Não é possível designarmos uma width e um height para elementos inline level)
 
 border: ; - Borda da caixa.
 

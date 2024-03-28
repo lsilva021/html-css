@@ -6,3 +6,20 @@
 Para mudar a cor de um marcador de um lista, basta aplicar um color dentro da tag 'ol ::marker'*
 
 *é obrigatório o espaço antes dos dois pontos.
+
+---------------------------------------------------------
+text-transform: CAPTALIZE; - Torna maiúscula toda primeira letra de cada palavra do parágrafo.
+Ex.: Meu Nome Sempre Foi Leonardo Silva.
+
+---------------------------------------------------------
+list-style-image: url('./caminho da imagem'); - Muda o bullet(marcador) da lista para a imagem escolhida.
+
+temos o valor 'inside' para a propriedade 'list-style-position: ;', que funciona colocando o bullet dentro da lista e não fora, como traz no padrão(outside).
+---------------------------------------------------------
+
+Site para conversão de audio: convertio.co
+
+Site de vídeos para estudos: storyblocks.com
+
+Site de vídeos e fotos para estudos: pexels.com
+---------------------------------------------------------
