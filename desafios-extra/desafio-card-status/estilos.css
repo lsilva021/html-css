@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Hanken Grotesk';
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root{
+    --corfundo01: #7857ff;
+    --corfundo02: #2e2be9;
+    --corcirculo01: #4e21ca;
+    --corcirculo02: #2421ca00;
+
+    --corfontesumario01: #ff5757;
+    --corfontesumario02: #ffb01f;
+    --corfontesumario03: #00bd91;
+    --corfontesumario04: #1125d4;
+
+    --corfonte05: hsl(0, 0%, 100%);
+    --corfonte06: hsl(221, 100%, 96%);
+    --corfonte07: hsl(241, 100%, 89%);
+    --corfonte08 :hsl(224, 30%, 27%);
+}
+
+.card{
+    color: var(--corfonte07);
+    display: flex;
+    max-width: 100%;
+    box-shadow: 5px 0px 40px 20px #2e2be917; 
+    border-radius: 30px;
+}
+
+.card h2{
+    color: white;
+}
+
+.card .resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--corfundo01), var(--corfundo02));
+    width: 372px;
+    height: 510px;
+    padding: 35px;
+    border-radius: 30px;
+}
+
+.card .resultado h1{
+    margin-bottom: 35px;
+    font-size: 1.5em;
+}
+
+.card .resultado > h2{
+    font-size: 1.9em;
+    margin-bottom: 15px;
+}
+
+.card .resultado > p{
+    font-size: 18px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.card .resultado .circulo{
+    background-image: linear-gradient(to bottom, var(--corcirculo01) 10%, var(--corcirculo02));
+    text-align: center;
+    padding: 45px 60px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.card .resultado .circulo h2{
+    font-size: 4.5em;
+    line-height: 90px;
+}
+
+.card .resultado .circulo p{
+    font-size: 1.1em;
+}
+
+.card .sumario{
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    color: var(--corfonte08);
+    font-weight: 700;
+    padding: 35px;
+}
+
+.card .sumario h1{
+    font-size: 1.52em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.card .sumario .classe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    letter-spacing: 0.2px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card .sumario .classe .total{
+    color: #9C98A1;
+}
+
+.card .sumario ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card .sumario li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card .sumario .reaction{
+    background-color: #ff575710;
+}
+
+.card .sumario .reaction > span{
+    color: var(--corfontesumario01);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card .sumario .memory{
+    background-color: #ffb11f17;
+}
+
+.card .sumario .memory > span{
+    color: var(--corfontesumario02);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card .sumario .verbal{
+    background-color: #00bd911a;
+}
+
+.card .sumario .verbal > span{
+    color: var(--corfontesumario03);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card .sumario .visual{
+    background-color: #1124d415;
+}
+
+.card .sumario .visual > span{
+    display: flex;
+    align-items: center;
+    color: var(--corfontesumario04);
+    gap: 15px;
+}
+
+.card .sumario .reaction > span::before{
+    content: '';
+    background: url(./imagens/icon-reaction.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.card .sumario .memory > span::before{
+    content: '';
+    background: url(./imagens/icon-memory.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.card .sumario .verbal > span::before{
+    content: '';
+    background: url(./imagens/icon-verbal.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.card .sumario .visual > span::before{
+    content: '';
+    background: url(./imagens/icon-visual.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.card .sumario .botao{
+    background-image: linear-gradient(to left, #7957ffb0, var(--corfundo02), #7957ff75);
+    background-size: 400%;
+    color: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.15em;
+    font-weight: 500;
+    padding: 17px 0;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.card .sumario .botao:hover{
+    cursor: pointer;
+    background-position: right;
+}
