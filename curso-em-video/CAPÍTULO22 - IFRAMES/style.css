@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+iframe{
+    width: 200px;
+    height: 100px;
+}
+
+.entendendo-iframe{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 100px;
+}
+

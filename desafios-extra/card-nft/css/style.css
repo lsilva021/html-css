@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+
+--corfundopadrao: #0d192b;
+--corcardpadrao: #14253d;
+--cormarginbottom: #2f415b;
+--cortextopadrao: #8bacda;
+--corvalorpadrao: #00fff7;
+
+}
+
+body{
+    background-color: var(--corfundopadrao);
+}
+
+main{
+    padding: 0 25px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--corcardpadrao);
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.card .NFT-image{
+    width: 100%;
+    border-radius: 7px;
+}
+
+/* COLOCANDO O OVERLAY */
+
+.card .NFT{
+    position: relative;
+    display: flex;
+}
+
+.card .NFT::before{
+    content: '';
+    background-color: #00fff7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.card .NFT::after{
+    content: '';
+    background: url(../imagens/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card .NFT:hover::after{
+    opacity: 1;
+}
+
+.card .NFT:hover::before{
+    opacity: 0.3;
+}
+
+.card .titulo{
+    margin: 25px 0 20px;
+    font-size: 1.27rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card .descricao{
+    margin-bottom: 23px;
+    font-size: 1.135rem;
+    line-height: 27px;
+    font-weight: 200;
+}
+
+.titulo, .owner{
+    color: white;
+}
+
+p, .tempo{
+    color: var(--cortextopadrao);
+}
+
+.card .informacoes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.card .informacoes .valor{
+    color: #00fff7;
+    font-weight: 500;
+    display: flex;
+}
+
+.card .informacoes .valor::before{
+    display: inline-block;
+    content: '';
+    background: url(../imagens/icon-ethereum.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+
+    /* é necessário mudar o display para inline-block para que o elemento apareça */
+}
+
+.card .informacoes .tempo{
+    font-weight: 300;
+    display: flex;
+}
+
+.card .informacoes .tempo::before{
+    display: inline-block;
+    content: '';
+    background: url(../imagens/icon-clock.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    padding-left: 7.5px;
+}
+
+.card .creator{
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    border-top: 1px solid var(--cormarginbottom);
+}
+
+.card .creator .foto-perfil{
+    max-width: 35px;
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card .creator p{
+    /* letter-spacing: 1px; */
+}
+
+.card .creator a{
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    font-size: 0.98rem;
+}
+
+.card .titulo:hover, .card .owner:hover{
+    color: #00fff7;
+}
