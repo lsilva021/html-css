@@ -1,0 +1,26 @@
+@media (max-width: 500px){
+    .card{
+        width: 90%;
+    }
+
+    .titulo-principal{
+        font-size: 1.4em;
+    }
+
+    .descricao{
+        width: 280px;
+    }
+
+    .plano{
+        width: 100%;
+    }
+
+    .plano .plano-anual{
+        margin-right: 30px;
+    }
+    
+    .plano .plano-anual .titulo-plano{
+        font-size: .97em;
+    }
+
+}

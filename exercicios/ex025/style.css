@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.secao-principal{
+    display: grid;
+    grid: 
+    "logotipo simbolo-1 simbolo-2" 200px
+    "logotipo mockup mockup" 200px;
+    color: yellowgreen;
+    gap: 3px;
+}
+
+.logotipo{
+    border: 1px solid black;
+    grid-area: logotipo;
+    background-color: #fff1;
+}
+
+.simbolo-1{
+    grid-area: simbolo-1;
+    border: 1px solid black;
+    background-color: #fffaff;
+}
+
+.simbolo-2{
+    grid-area: simbolo-2;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.mockup{
+    grid-area: mockup;border: 1px solid orangered;
+    background-color: #000;
+}
+
+.aplicacao{
+    border: 1px solid black;
+    height: 200px;
+}
+
+.posts{
+    display: grid;
+    gap: 3px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 
+    "post-1 post-2 post-3 post-4" 120px;
+}
+
+.post-1{
+    border: 1px solid black;
+    grid-area: post-1;
+}
+
+.post-2{
+    border: 1px solid black;
+    grid-area: post-2;
+}
+
+.post-3{
+    border: 1px solid black;
+    grid-area: post-3;
+}
+
+.post-4{
+    border: 1px solid black;
+    grid-area: post-4;
+}

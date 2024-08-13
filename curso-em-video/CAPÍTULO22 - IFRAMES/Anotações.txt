@@ -1,24 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos de iFrame</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Testando o uso de um iframe</h1>
-    <p>
-        Acessando o site do curso em video para aprender a programar 
-        <iframe src="https://cursoemvideo.com" width="400px" height="400px" frameborder="0">
-            <a href="https://cursoemvideo.com" target="_blank">Curso em video</a>
-        </iframe>
-    </p>
-    <p>
-        o repositório do Guanabara 
-        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
-            <a href="https://gustavoguanabara.github.io" target="_blank">Github</a>
-        </iframe> também é bem legal.
-    </p>
-</body>
-</html>
+
+ Os iframes servem para criarmos um tipo de janela/quadro do site que queremos mostrar. 
+
+ Para fazermos isso basta adicionarmos o endereço do site dentro da propriedade 'src'.
+
+ Dentro da tag iframe adcionarmos um texto que aparece somente se o dispositivo usado não tiver compatibilidade com iframes. Funciona como o 'alt' na tag <img>.
+
+Os valores padrões dos iframes são:
+
+width: 300px;
+height: 150px;
+frameborder 0
+
+
+Frameborder = "0" - Sem borda
+Frameborder = "1" - Com borda
+Scrolling="yes" - Adiciona rolagem mesmo que a página nao tenha
+Scrolling="no" - Exclui a rolagem mesmo que a página tenha
+
+Existem sites que bloqueiam a exibição do seu conteúdos em iframes
+
+Para escolhermos uma mídia para mostrar no iframe assim que abrirmos o site, podemos usar no lugar de "src" o "srcdoc", que nos permite inserirmos códigos HTML.
+
+Incoveniente que os iframes podem ter:
+
+- SEO: Google bot pode identificar possíveis erros de indexação e não mostrar o site na busca do Google.
+- Acessibilidade: alguns softwares leitores de tela usados para pessoas com deficiência visual também tem problemas para acessar.
+- Usabilidade: Alguns navegadores podem se confundir entre a usabilidade do site principal e do iframe, como por exemplo voltar uma página ou abrir uma nova página usando o "target = _blank".
+- Segurança: os iframes podem acabar abrindo uma porta do nosso site para outros sites.

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display';
+}
+
+main{
+    height: 100vh;
+    background: url(../imagens/pattern-background-desktop.svg) no-repeat top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 13px 20px 38px -21px rgba(56, 41, 224, 0.445);
+}
+
+.hero{
+    width: 100%;
+    margin-bottom: 42px;
+    border-radius: 15px 15px 0 0;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-principal{
+    margin-bottom: 18px;
+    font-size: 1.76em;
+    font-weight: 900;
+}
+
+.descricao{
+    color: hsl(224, 23%, 55%);
+    width: 300px;
+    line-height: 23px;
+    font-weight: 600;
+    font-size: 16.4px;
+    margin-bottom: 27px;
+}
+
+.plano{
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-bottom: 33px;
+}
+
+.plano img{
+    margin-right: 20px;
+}
+
+.plano a{
+    font-size: .9em;
+    font-weight: 800;
+}
+
+.plano .plano-anual{
+    margin-right: 90px;
+}
+
+.plano .plano-anual .titulo-plano{
+    font-size: 1em;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.plano .plano-anual .valor{
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+
+.plano a:hover{
+    color: hsla(245, 89%, 63%, 0.788);
+    text-decoration: none;
+}
+
+.card .informacoes .btn-pag{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: -5px 15px 32px -18px hsl(245, 75%, 52%);
+    margin-bottom: 33px;
+    transition: .2s ease-in-out;
+}
+
+.card .informacoes .btn-pag:hover{
+    background-color: hsla(245, 91%, 57%, 0.788);
+    cursor: pointer;
+}
+
+.cancel{
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 48px;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+
+/* :root{
+    
+- Pale : hsl(225, 100%, 94%)
+- Bright : hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale : hsl(225, 100%, 98%)
+- Desaturated : hsl(224, 23%, 55%)
+- Dark : hsl(223, 47%, 23%)
+} */
